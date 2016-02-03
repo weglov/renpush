@@ -1,3 +1,26 @@
 .black {
   color: black
 }
+.static {
+	width: 500px;
+	.staticblock {
+		display: flex;
+	    background: #409191;
+	    color: #fff;
+	    position: relative;
+	    justify-content: space-around;
+		.staticblock__elem {
+			box-sizing: border-box;
+			padding: 10px 20px;
+			text-align: center;
+			.staticblock__number {
+				font-size: 3rem;
+	    		font-weight: bold;
+			}
+			.staticblock__text {
+			    font-size: 12px;
+			    color: #eee;
+			}
+		}
+	}	
+}
