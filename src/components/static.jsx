@@ -9,7 +9,8 @@ module.exports = React.createClass({
 		today = today.setHours(0, 0, 0, 0);
 		 return {
 	    	static: [],
-	    	newplayer: [],
+	    	newplayer: '-',
+	    	unsubscribe: '-',
 	    	today: today
 	    }
  	 },
@@ -37,19 +38,17 @@ module.exports = React.createClass({
 
   	},
 	render: function() {
-		console.log(this.state);
 		return <div className="static">
-		<h3>Статистика</h3>
 			<div className="staticblock">
-				<div className="staticblock__elem">
+				<div className="staticblock__elem fiolet">
 					<div className="staticblock__text">Активных подписчиков</div>
-					<div className="staticblock__number">{this.state.static.players}</div>
+					<div className="staticblock__number">{this.state.static.players ? this.state.static.players :  '-'}</div>
 				</div>
-				<div className="staticblock__elem">
+				<div className="staticblock__elem green">
 					<div className="staticblock__text">Новых сегодня</div>
 					<div className="staticblock__number">{this.state.newplayer}</div>
 				</div>
-				<div className="staticblock__elem">
+				<div className="staticblock__elem orange">
 					<div className="staticblock__text">Отписавшихся</div>
 					<div className="staticblock__number">{this.state.unsubscribe}</div>
 				</div>

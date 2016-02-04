@@ -63,7 +63,7 @@ gulp.task('serve', function(done) {
         filter: function(filePath, cb) {
           if(/main.js/.test(filePath)) {
             cb(true)
-          } else if(/style.css/.test(filePath)){
+          } else if(/renpush.css/.test(filePath)){
             cb(true)
           }
         }
@@ -75,7 +75,7 @@ gulp.task('serve', function(done) {
 gulp.task('sass', function () {
   gulp.src('./sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(concat('style.css'))
+    .pipe(concat('renpush.css'))
     .pipe(gulp.dest('./'));
 });
 
