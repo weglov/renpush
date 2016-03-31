@@ -6,6 +6,7 @@ create on React
 
 Install
 ------
+```
 git clone https://github.com/weglov/renpush.git
 $ npm install gulpjs/gulp#4.0
 $ npm install
