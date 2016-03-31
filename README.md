@@ -3,3 +3,7 @@
 Unofficial module for drupal, on system onesignal.com
 
 create on React
+
+Install
+------
+'npm install'
